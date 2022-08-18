@@ -1,27 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
-import Page01 from "./page/page_01"
+import React from "react";
+import AddTodoForm from "./components/AddTodoForm";
+import TodoList from "./components/TodoList";
+import TotalCompleteItems from "./components/TotalCompleteItems";
 
-function App() {
-  return (
-    <div className="App">
-      {/*<header className="App-header">*/}
-      {/*  /!*<img src={logo} className="App-logo" alt="logo" />*!/*/}
-      {/*  <p>*/}
-      {/*    Nguyen Tien Trien Demo*/}
-      {/*  </p>*/}
-      {/*  <a*/}
-      {/*    className="App-link"*/}
-      {/*    href="https://reactjs.org"*/}
-      {/*    target="_blank"*/}
-      {/*    rel="noopener noreferrer"*/}
-      {/*  >*/}
-      {/*    Learn React*/}
-      {/*  </a>*/}
-      {/*</header>*/}
-      <Page01/>
-    </div>
-  );
+const App = () => {
+    return (
+        <div className="App">
+            <h1>My Todo List</h1>
+            <AddTodoForm/>
+            <TodoList/>
+            <TotalCompleteItems/>
+        </div>
+    );
 }
 
 export default App;
+
+
+// use redux debug : https://viblo.asia/p/debug-cung-redux-dev-tool-OeVKB8kAlkW
